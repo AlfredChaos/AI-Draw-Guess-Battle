@@ -1,0 +1,755 @@
+{
+    "version": "1.0",
+    "categories": [
+        {
+            "name": "动物",
+            "words": [
+                {
+                    "name": "狗",
+                    "count": 1
+                },
+                {
+                    "name": "猫",
+                    "count": 1
+                },
+                {
+                    "name": "大象",
+                    "count": 2
+                },
+                {
+                    "name": "老虎",
+                    "count": 2
+                },
+                {
+                    "name": "熊猫",
+                    "count": 2
+                },
+                {
+                    "name": "狮子",
+                    "count": 2
+                },
+                {
+                    "name": "长颈鹿",
+                    "count": 3
+                },
+                {
+                    "name": "猴子",
+                    "count": 2
+                },
+                {
+                    "name": "兔子",
+                    "count": 2
+                },
+                {
+                    "name": "企鹅",
+                    "count": 2
+                },
+                {
+                    "name": "袋鼠",
+                    "count": 2
+                },
+                {
+                    "name": "斑马",
+                    "count": 2
+                },
+                {
+                    "name": "犀牛",
+                    "count": 2
+                },
+                {
+                    "name": "河马",
+                    "count": 2
+                },
+                {
+                    "name": "鳄鱼",
+                    "count": 2
+                },
+                {
+                    "name": "狐狸",
+                    "count": 2
+                },
+                {
+                    "name": "狼",
+                    "count": 1
+                },
+                {
+                    "name": "松鼠",
+                    "count": 2
+                },
+                {
+                    "name": "刺猬",
+                    "count": 2
+                },
+                {
+                    "name": "蝴蝶",
+                    "count": 2
+                },
+                {
+                    "name": "蜜蜂",
+                    "count": 2
+                },
+                {
+                    "name": "蜘蛛",
+                    "count": 2
+                },
+                {
+                    "name": "蚂蚁",
+                    "count": 2
+                },
+                {
+                    "name": "蜻蜓",
+                    "count": 2
+                },
+                {
+                    "name": "青蛙",
+                    "count": 2
+                },
+                {
+                    "name": "恐龙",
+                    "count": 2
+                },
+                {
+                    "name": "鲸鱼",
+                    "count": 2
+                },
+                {
+                    "name": "鲨鱼",
+                    "count": 2
+                },
+                {
+                    "name": "考拉",
+                    "count": 2
+                },
+                {
+                    "name": "孔雀",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "name": "食物",
+            "words": [
+                {
+                    "name": "苹果",
+                    "count": 2
+                },
+                {
+                    "name": "香蕉",
+                    "count": 2
+                },
+                {
+                    "name": "西瓜",
+                    "count": 2
+                },
+                {
+                    "name": "葡萄",
+                    "count": 2
+                },
+                {
+                    "name": "面包",
+                    "count": 2
+                },
+                {
+                    "name": "牛奶",
+                    "count": 2
+                },
+                {
+                    "name": "鸡蛋",
+                    "count": 2
+                },
+                {
+                    "name": "米饭",
+                    "count": 2
+                },
+                {
+                    "name": "面条",
+                    "count": 2
+                },
+                {
+                    "name": "饺子",
+                    "count": 2
+                },
+                {
+                    "name": "包子",
+                    "count": 2
+                },
+                {
+                    "name": "汉堡",
+                    "count": 2
+                },
+                {
+                    "name": "披萨",
+                    "count": 2
+                },
+                {
+                    "name": "蛋糕",
+                    "count": 2
+                },
+                {
+                    "name": "冰淇淋",
+                    "count": 3
+                },
+                {
+                    "name": "巧克力",
+                    "count": 3
+                },
+                {
+                    "name": "咖啡",
+                    "count": 2
+                },
+                {
+                    "name": "茶",
+                    "count": 1
+                },
+                {
+                    "name": "啤酒",
+                    "count": 2
+                },
+                {
+                    "name": "鸡肉",
+                    "count": 2
+                },
+                {
+                    "name": "牛肉",
+                    "count": 2
+                },
+                {
+                    "name": "鱼肉",
+                    "count": 2
+                },
+                {
+                    "name": "虾",
+                    "count": 1
+                },
+                {
+                    "name": "蔬菜",
+                    "count": 2
+                },
+                {
+                    "name": "土豆",
+                    "count": 2
+                },
+                {
+                    "name": "番茄",
+                    "count": 2
+                },
+                {
+                    "name": "黄瓜",
+                    "count": 2
+                },
+                {
+                    "name": "胡萝卜",
+                    "count": 3
+                },
+                {
+                    "name": "奶酪",
+                    "count": 2
+                },
+                {
+                    "name": "饼干",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "name": "运动",
+            "words": [
+                {
+                    "name": "跑步",
+                    "count": 2
+                },
+                {
+                    "name": "游泳",
+                    "count": 2
+                },
+                {
+                    "name": "篮球",
+                    "count": 2
+                },
+                {
+                    "name": "足球",
+                    "count": 2
+                },
+                {
+                    "name": "网球",
+                    "count": 2
+                },
+                {
+                    "name": "乒乓球",
+                    "count": 3
+                },
+                {
+                    "name": "羽毛球",
+                    "count": 3
+                },
+                {
+                    "name": "排球",
+                    "count": 2
+                },
+                {
+                    "name": "跳高",
+                    "count": 2
+                },
+                {
+                    "name": "跳远",
+                    "count": 2
+                },
+                {
+                    "name": "举重",
+                    "count": 2
+                },
+                {
+                    "name": "滑雪",
+                    "count": 2
+                },
+                {
+                    "name": "滑冰",
+                    "count": 2
+                },
+                {
+                    "name": "瑜伽",
+                    "count": 2
+                },
+                {
+                    "name": "健身",
+                    "count": 2
+                },
+                {
+                    "name": "拳击",
+                    "count": 2
+                },
+                {
+                    "name": "击剑",
+                    "count": 2
+                },
+                {
+                    "name": "射箭",
+                    "count": 2
+                },
+                {
+                    "name": "骑马",
+                    "count": 2
+                },
+                {
+                    "name": "自行车",
+                    "count": 3
+                },
+                {
+                    "name": "马拉松",
+                    "count": 3
+                },
+                {
+                    "name": "跳水",
+                    "count": 2
+                },
+                {
+                    "name": "划船",
+                    "count": 2
+                },
+                {
+                    "name": "高尔夫",
+                    "count": 3
+                },
+                {
+                    "name": "棒球",
+                    "count": 2
+                },
+                {
+                    "name": "橄榄球",
+                    "count": 3
+                },
+                {
+                    "name": "攀岩",
+                    "count": 2
+                },
+                {
+                    "name": "冲浪",
+                    "count": 2
+                },
+                {
+                    "name": "柔道",
+                    "count": 2
+                },
+                {
+                    "name": "跆拳道",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "name": "人物",
+            "words": [
+                {
+                    "name": "李白",
+                    "count": 2
+                },
+                {
+                    "name": "杜甫",
+                    "count": 2
+                },
+                {
+                    "name": "诸葛亮",
+                    "count": 3
+                },
+                {
+                    "name": "孙悟空",
+                    "count": 3
+                },
+                {
+                    "name": "唐僧",
+                    "count": 2
+                },
+                {
+                    "name": "曹操",
+                    "count": 2
+                },
+                {
+                    "name": "关羽",
+                    "count": 2
+                },
+                {
+                    "name": "秦始皇",
+                    "count": 3
+                },
+                {
+                    "name": "武则天",
+                    "count": 3
+                },
+                {
+                    "name": "爱因斯坦",
+                    "count": 4
+                },
+                {
+                    "name": "牛顿",
+                    "count": 2
+                },
+                {
+                    "name": "贝多芬",
+                    "count": 3
+                },
+                {
+                    "name": "莫扎特",
+                    "count": 3
+                },
+                {
+                    "name": "达芬奇",
+                    "count": 3
+                },
+                {
+                    "name": "毕加索",
+                    "count": 3
+                },
+                {
+                    "name": "林肯",
+                    "count": 2
+                },
+                {
+                    "name": "丘吉尔",
+                    "count": 3
+                },
+                {
+                    "name": "毛泽东",
+                    "count": 3
+                },
+                {
+                    "name": "周恩来",
+                    "count": 3
+                },
+                {
+                    "name": "邓小平",
+                    "count": 3
+                },
+                {
+                    "name": "马云",
+                    "count": 2
+                },
+                {
+                    "name": "马化腾",
+                    "count": 3
+                },
+                {
+                    "name": "鲁迅",
+                    "count": 2
+                },
+                {
+                    "name": "金庸",
+                    "count": 2
+                },
+                {
+                    "name": "成龙",
+                    "count": 2
+                },
+                {
+                    "name": "李连杰",
+                    "count": 3
+                },
+                {
+                    "name": "姚明",
+                    "count": 2
+                },
+                {
+                    "name": "刘翔",
+                    "count": 2
+                },
+                {
+                    "name": "乔丹",
+                    "count": 2
+                },
+                {
+                    "name": "梅西",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "name": "成语",
+            "words": [
+                {
+                    "name": "画蛇添足",
+                    "count": 4
+                },
+                {
+                    "name": "守株待兔",
+                    "count": 4
+                },
+                {
+                    "name": "亡羊补牢",
+                    "count": 4
+                },
+                {
+                    "name": "掩耳盗铃",
+                    "count": 4
+                },
+                {
+                    "name": "狐假虎威",
+                    "count": 4
+                },
+                {
+                    "name": "井底之蛙",
+                    "count": 4
+                },
+                {
+                    "name": "对牛弹琴",
+                    "count": 4
+                },
+                {
+                    "name": "望梅止渴",
+                    "count": 4
+                },
+                {
+                    "name": "拔苗助长",
+                    "count": 4
+                },
+                {
+                    "name": "叶公好龙",
+                    "count": 4
+                },
+                {
+                    "name": "自相矛盾",
+                    "count": 4
+                },
+                {
+                    "name": "刻舟求剑",
+                    "count": 4
+                },
+                {
+                    "name": "滥竽充数",
+                    "count": 4
+                },
+                {
+                    "name": "买椟还珠",
+                    "count": 4
+                },
+                {
+                    "name": "杞人忧天",
+                    "count": 4
+                },
+                {
+                    "name": "朝三暮四",
+                    "count": 4
+                },
+                {
+                    "name": "一鸣惊人",
+                    "count": 4
+                },
+                {
+                    "name": "卧薪尝胆",
+                    "count": 4
+                },
+                {
+                    "name": "破釜沉舟",
+                    "count": 4
+                },
+                {
+                    "name": "四面楚歌",
+                    "count": 4
+                },
+                {
+                    "name": "纸上谈兵",
+                    "count": 4
+                },
+                {
+                    "name": "负荆请罪",
+                    "count": 4
+                },
+                {
+                    "name": "完璧归赵",
+                    "count": 4
+                },
+                {
+                    "name": "三顾茅庐",
+                    "count": 4
+                },
+                {
+                    "name": "望洋兴叹",
+                    "count": 4
+                },
+                {
+                    "name": "班门弄斧",
+                    "count": 4
+                },
+                {
+                    "name": "杯弓蛇影",
+                    "count": 4
+                },
+                {
+                    "name": "毛遂自荐",
+                    "count": 4
+                },
+                {
+                    "name": "胸有成竹",
+                    "count": 4
+                },
+                {
+                    "name": "指鹿为马",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "name": "化妆品",
+            "words": [
+                {
+                    "name": "口红",
+                    "count": 2
+                },
+                {
+                    "name": "粉底",
+                    "count": 2
+                },
+                {
+                    "name": "睫毛膏",
+                    "count": 3
+                },
+                {
+                    "name": "眼影",
+                    "count": 2
+                },
+                {
+                    "name": "腮红",
+                    "count": 2
+                },
+                {
+                    "name": "眉笔",
+                    "count": 2
+                },
+                {
+                    "name": "唇膏",
+                    "count": 2
+                },
+                {
+                    "name": "香水",
+                    "count": 2
+                },
+                {
+                    "name": "面膜",
+                    "count": 2
+                },
+                {
+                    "name": "洗面奶",
+                    "count": 3
+                },
+                {
+                    "name": "面霜",
+                    "count": 2
+                },
+                {
+                    "name": "精华液",
+                    "count": 3
+                },
+                {
+                    "name": "防晒霜",
+                    "count": 3
+                },
+                {
+                    "name": "卸妆水",
+                    "count": 3
+                },
+                {
+                    "name": "眼线笔",
+                    "count": 3
+                },
+                {
+                    "name": "遮瑕膏",
+                    "count": 3
+                },
+                {
+                    "name": "粉饼",
+                    "count": 2
+                },
+                {
+                    "name": "化妆刷",
+                    "count": 3
+                },
+                {
+                    "name": "指甲油",
+                    "count": 3
+                },
+                {
+                    "name": "护手霜",
+                    "count": 3
+                },
+                {
+                    "name": "身体乳",
+                    "count": 3
+                },
+                {
+                    "name": "洗发水",
+                    "count": 3
+                },
+                {
+                    "name": "护发素",
+                    "count": 3
+                },
+                {
+                    "name": "沐浴露",
+                    "count": 3
+                },
+                {
+                    "name": "香水",
+                    "count": 2
+                },
+                {
+                    "name": "剃须膏",
+                    "count": 3
+                },
+                {
+                    "name": "发胶",
+                    "count": 2
+                },
+                {
+                    "name": "发蜡",
+                    "count": 2
+                },
+                {
+                    "name": "眉粉",
+                    "count": 2
+                },
+                {
+                    "name": "假睫毛",
+                    "count": 3
+                }
+            ]
+        }
+    ]
+}

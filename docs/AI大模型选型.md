@@ -1,6 +1,6 @@
 全模态：qwen-omni-turbo
 API调用示例：
-```
+```python
 import os
 from openai import OpenAI
 
@@ -30,7 +30,7 @@ for chunk in completion:
 
 图片生成：
 API调用示例：stable-diffusion-3.5-large
-```
+```python
 from http import HTTPStatus
 from urllib.parse import urlparse, unquote
 from pathlib import PurePosixPath
