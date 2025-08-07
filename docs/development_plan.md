@@ -38,12 +38,12 @@
   - 实现 `game/utils/validators.py` - 数据验证器
 
 ### 数据层基础
-- [ ] **Task 1.5**: 数据模型定义
+- [x] **Task 1.5**: 数据模型定义
   - 实现 `game/data/models/player.py` - 玩家数据模型
   - 实现 `game/data/models/word.py` - 词汇数据模型
   - 实现 `game/data/models/game_data.py` - 游戏数据模型
 
-- [ ] **Task 1.6**: 数据仓库实现
+- [x] **Task 1.6**: 数据仓库实现
   - 实现 `game/data/repositories/word_repository.py` - 词库管理
   - 实现 `game/data/repositories/config_repository.py` - 配置管理
   - 集成现有 `words.json` 文件
