@@ -133,6 +133,33 @@ class WordRepository:
         """
         return self.words_by_difficulty.get(difficulty.lower(), []).copy()
     
+    def get_words_by_filters(self, difficulty: Optional[str] = None, category: Optional[str] = None) -> List[Word]:
+        """
+        根据难度和类别筛选词汇
+        
+        Args:
+            difficulty: 词汇难度（可选）
+            category: 词汇类别（可选）
+            
+        Returns:
+            符合筛选条件的词汇列表
+        """
+        # 如果没有筛选条件，返回所有词汇
+        if difficulty is None and category is None:
+            return self.get_all_words()
+        
+        # 如果只有难度筛选条件
+        if category is None:
+            return self.get_words_by_difficulty(difficulty)
+        
+        # 如果只有类别筛选条件
+        if difficulty is None:
+            return self.get_words_by_category(category)
+        
+        # 如果同时有难度和类别筛选条件
+        category_words = self.get_words_by_category(category)
+        return [word for word in category_words if word.difficulty.lower() == difficulty.lower()]
+    
     def get_words_by_category_and_difficulty(self, category: str, difficulty: str) -> List[Word]:
         """
         根据类别和难度获取词汇
@@ -145,7 +172,7 @@ class WordRepository:
             指定类别和难度的词汇列表
         """
         category_words = self.get_words_by_category(category)
-        return [word for word in category_words if word.is_difficulty(difficulty)]
+        return [word for word in category_words if word.difficulty.lower() == difficulty.lower()]
     
     def get_random_word(self, exclude_word: Optional[Word] = None) -> Optional[Word]:
         """
