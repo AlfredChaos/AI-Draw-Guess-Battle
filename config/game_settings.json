@@ -1,0 +1,20 @@
+{
+  "max_rounds": 3,
+  "max_players": 2,
+  "drawing_time_limit": 60,
+  "guessing_time_limit": 30,
+  "base_score_per_correct": 10,
+  "time_bonus_multiplier": 2.0,
+  "max_time_bonus": 60,
+  "default_difficulty": "medium",
+  "available_difficulties": ["easy", "medium", "hard"],
+  "min_word_length": 2,
+  "max_word_length": 10,
+  "words_per_difficulty": 100,
+  "debug_mode": false,
+  "auto_save_interval": 30,
+  "log_level": "INFO",
+  "words_file_path": "words.json",
+  "save_directory": "saves",
+  "log_directory": "logs"
+}

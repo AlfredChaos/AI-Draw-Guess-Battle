@@ -1,0 +1,60 @@
+{
+  "window": {
+    "width": 1200,
+    "height": 800,
+    "title": "AI Sketch Duel",
+    "resizable": true,
+    "fullscreen": false,
+    "vsync": true,
+    "fps_limit": 60
+  },
+  "colors": {
+    "primary": [74, 144, 226],
+    "secondary": [156, 39, 176],
+    "accent": [255, 193, 7],
+    "background": [18, 18, 18],
+    "surface": [33, 33, 33],
+    "text_primary": [255, 255, 255],
+    "text_secondary": [189, 189, 189],
+    "text_disabled": [117, 117, 117],
+    "success": [76, 175, 80],
+    "warning": [255, 152, 0],
+    "error": [244, 67, 54],
+    "info": [33, 150, 243],
+    "glass_background": [255, 255, 255, 20],
+    "glass_border": [255, 255, 255, 40]
+  },
+  "fonts": {
+    "primary_font": "Arial",
+    "secondary_font": "Helvetica",
+    "monospace_font": "Courier New",
+    "title_size": 24,
+    "body_size": 14,
+    "caption_size": 12,
+    "button_size": 16
+  },
+  "layout": {
+    "margin": 16,
+    "padding": 12,
+    "border_radius": 8,
+    "border_width": 1,
+    "shadow_blur": 4,
+    "shadow_offset": [0, 2],
+    "button_height": 40,
+    "input_height": 36,
+    "toolbar_height": 48,
+    "sidebar_width": 280,
+    "panel_spacing": 20
+  },
+  "animations": {
+    "enabled": true,
+    "duration_fast": 0.15,
+    "duration_normal": 0.3,
+    "duration_slow": 0.5,
+    "easing_standard": "ease-out",
+    "easing_decelerate": "ease-in",
+    "easing_accelerate": "ease-out",
+    "scale_factor": 1.05,
+    "fade_alpha": 0.8
+  }
+}

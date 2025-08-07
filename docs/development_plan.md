@@ -15,19 +15,19 @@
 ## 阶段一：基础框架搭建 (Week 1-2)
 
 ### 项目结构初始化
-- [ ] **Task 1.1**: 创建完整的目录结构
+- [x] **Task 1.1**: 创建完整的目录结构
   - 创建 `game/` 主目录及所有子目录
   - 添加所有 `__init__.py` 文件
   - 迁移现有资源文件到新结构
 
-- [ ] **Task 1.2**: 配置管理系统
+- [x] **Task 1.2**: 配置管理系统
   - 实现 `game/config/game_config.py` - 游戏基础配置
   - 实现 `game/config/ui_config.py` - UI相关配置
   - 实现 `game/config/ai_config.py` - AI服务配置
   - 创建配置文件加载和验证机制
 
 ### 核心工具类
-- [ ] **Task 1.3**: 坐标转换服务
+- [x] **Task 1.3**: 坐标转换服务
   - 实现 `game/services/coordinate_service.py`
   - 提供pygame到OpenGL坐标转换函数
   - 添加坐标系统的单元测试
