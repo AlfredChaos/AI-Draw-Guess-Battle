@@ -32,7 +32,7 @@
   - 提供pygame到OpenGL坐标转换函数
   - 添加坐标系统的单元测试
 
-- [ ] **Task 1.4**: 常量和工具函数
+- [x] **Task 1.4**: 常量和工具函数
   - 实现 `game/utils/constants.py` - 定义游戏常量
   - 实现 `game/utils/helpers.py` - 通用辅助函数
   - 实现 `game/utils/validators.py` - 数据验证器
