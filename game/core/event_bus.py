@@ -19,6 +19,8 @@ class EventType(Enum):
     GAME_END = "game_end"
     GAME_PAUSE = "game_pause"
     GAME_RESUME = "game_resume"
+    GAME_STATE_CHANGED = "game_state_changed"
+    GAME_RESET = "game_reset"
     
     # 回合事件
     ROUND_START = "round_start"
