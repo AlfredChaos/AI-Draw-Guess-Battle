@@ -29,17 +29,18 @@
     "image_style": "natural",
     "num_images": 1,
     "guidance_scale": 7.5,
-    "num_inference_steps": 20,
-    "target_width": 1024,
-    "target_height": 1024,
+    "num_inference_steps": 50,
     "timeout": 60,
     "max_retries": 2,
     "retry_delay": 2.0,
-    "enable_safety_checker": true,
-    "output_format": "png",
-    "save_generated_images": true,
-    "image_save_directory": "generated_images",
-    "negative_prompt": "text, watermark, signature, complex details"
+    "auto_resize": true,
+    "target_width": 512,
+    "target_height": 512,
+    "save_original": true,
+    "enable_prompt_enhancement": true,
+    "style_suffix": ", simple drawing style, clean lines, minimal details",
+    "negative_prompt": "text, watermark, signature, complex details",
+    "supported_sizes": ["256x256", "512x512", "1024x1024", "1792x1024", "1024x1792"]
   },
   "cache": {
     "enable_llm_cache": true,
@@ -50,21 +51,35 @@
     "image_cache_ttl": 7200,
     "cache_directory": "cache",
     "llm_cache_file": "llm_cache.json",
-    "image_cache_file": "image_cache.json",
-    "auto_cleanup": true,
-    "cleanup_interval": 300,
-    "compress_cache": false
+    "image_cache_directory": "images",
+    "cache_strategy": "lru"
   },
   "behavior": {
-    "creativity_level": 0.8,
-    "enable_content_filter": true,
-    "enable_prompt_enhancement": true,
-    "auto_retry_on_failure": true,
-    "fallback_provider": "openai",
-    "fallback_model": "gpt-3.5-turbo",
-    "max_concurrent_requests": 5,
-    "request_rate_limit": 10,
-    "enable_logging": true,
-    "log_level": "INFO"
-  }
+    "ai_difficulty_levels": {
+      "easy": 0.6,
+      "medium": 0.8,
+      "hard": 1.0,
+      "expert": 1.2
+    },
+    "default_ai_difficulty": "medium",
+    "ai_drawing_speed": 1.0,
+    "ai_drawing_accuracy": 0.8,
+    "ai_use_hints": true,
+    "ai_guessing_delay": 2.0,
+    "ai_confidence_threshold": 0.7,
+    "ai_max_guesses": 3,
+    "ai_personality": "friendly",
+    "ai_response_style": "casual",
+    "enable_adaptive_difficulty": true,
+    "learning_rate": 0.1
+  },
+  "enable_ai": true,
+  "enable_offline_mode": false,
+  "fallback_to_local": true,
+  "content_filter_enabled": true,
+  "rate_limit_requests_per_minute": 60,
+  "max_concurrent_requests": 5,
+  "log_api_calls": true,
+  "log_response_times": true,
+  "enable_usage_tracking": true
 }

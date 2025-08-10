@@ -18,14 +18,21 @@ from ..data.models.game_data import GameData
 from ..data.models.word import Word
 from ..data.repositories.word_repository import WordRepository
 from ..utils.constants import MAX_ROUNDS
+from ..config.config_manager import ConfigManager
+from ..ui.game_display import GameDisplay
 
 
 class GameEngine:
     """游戏主引擎"""
     
-    def __init__(self):
-        """初始化游戏引擎"""
+    def __init__(self, config_manager: Optional[ConfigManager] = None):
+        """初始化游戏引擎
+        
+        Args:
+            config_manager: 配置管理器，如果为None则使用默认配置
+        """
         self.logger = logging.getLogger(__name__)
+        self.config_manager = config_manager
         
         # 初始化核心组件
         self.event_bus: EventBus = get_event_bus()
@@ -33,6 +40,9 @@ class GameEngine:
         self.round_manager: RoundManager = RoundManager()
         self.scoring_system: ScoringSystem = ScoringSystem()
         self.word_repository: WordRepository = WordRepository()
+        
+        # 初始化游戏显示界面
+        self.game_display: GameDisplay = GameDisplay(self.event_bus)
         
         # 初始化游戏数据
         game_id = str(uuid.uuid4())
@@ -123,9 +133,14 @@ class GameEngine:
             # 初始化游戏数据
             self.game_data.start_game()
             
+            # 获取最大回合数，优先使用配置中的值
+            max_rounds = MAX_ROUNDS
+            if self.config_manager is not None:
+                max_rounds = self.config_manager.game_config.max_rounds
+            
             # 初始化游戏状态上下文
             context = GameStateContext(
-                total_rounds=MAX_ROUNDS,
+                total_rounds=max_rounds,
                 current_round=0
             )
             

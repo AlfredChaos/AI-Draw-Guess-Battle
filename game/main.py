@@ -9,13 +9,15 @@ AI Sketch Duel - 游戏入口文件
 import sys
 import logging
 from pathlib import Path
+import uuid
 
 # 添加项目根目录到Python路径
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
 from game.core.game_engine import GameEngine
-from game.config.game_config import GameConfig
+from game.data.models.player import Player, PlayerType
+from game.config.config_manager import ConfigManager
 
 
 def setup_logging() -> None:
@@ -39,13 +41,27 @@ def main() -> None:
         
         logger.info("Starting AI Sketch Duel...")
         
-        # 加载配置
-        config = GameConfig.load_default()
+        # 加载所有配置
+        config_manager = ConfigManager(Path(__file__).parent.parent / "config")
+        config_manager.load_all_configs()
         
         # 创建并启动游戏引擎
-        game_engine = GameEngine(config)
-        game_engine.run()
+        game_engine = GameEngine(config_manager)
         
+        # 添加一个测试玩家
+        player = Player(
+            player_id=str(uuid.uuid4()),
+            name="Test Player",
+            player_type=PlayerType.HUMAN
+        )
+        game_engine.add_player(player)
+        
+        # 启动游戏
+        success = game_engine.start_game()
+        if not success:
+            logger.error("Failed to start game")
+            sys.exit(1)
+            
     except KeyboardInterrupt:
         logger.info("Game interrupted by user")
     except Exception as e:
