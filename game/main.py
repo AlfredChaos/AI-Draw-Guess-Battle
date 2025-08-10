@@ -48,13 +48,22 @@ def main() -> None:
         # 创建并启动游戏引擎
         game_engine = GameEngine(config_manager)
         
-        # 添加一个测试玩家
-        player = Player(
+        # 添加人类玩家和AI玩家
+        human_player = Player(
             player_id=str(uuid.uuid4()),
-            name="Test Player",
+            name="人类玩家1",
             player_type=PlayerType.HUMAN
         )
-        game_engine.add_player(player)
+        game_engine.add_player(human_player)
+        logger.info(f"Added human player: {human_player.name}")
+
+        ai_player = Player(
+            player_id=str(uuid.uuid4()),
+            name="AI玩家1",
+            player_type=PlayerType.AI
+        )
+        game_engine.add_player(ai_player)
+        logger.info(f"Added AI player: {ai_player.name}")
         
         # 启动游戏
         success = game_engine.start_game()
